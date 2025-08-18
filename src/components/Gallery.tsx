@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Camera } from 'lucide-react';
+import { Camera, Play } from 'lucide-react';
+import { VideoCarousel } from './VideoCarousel';
 
 const Gallery = () => {
   const galleryImages = [
@@ -78,6 +79,44 @@ const Gallery = () => {
     }
   ];
 
+  const videoSlides = [
+    {
+      title: "Abertura de Piscina",
+      description: "Escavação precisa para construção de piscinas residenciais",
+      src: "/lovable-uploads/galeria/videos/abertura_de_piscina.mp4"
+    },
+    {
+      title: "Demolição",
+      description: "Serviços de demolição controlada e segura",
+      src: "/lovable-uploads/galeria/videos/demolicao.mp4"
+    },
+    {
+      title: "Demolição Estrutural",
+      description: "Demolição de estruturas complexas com equipamentos especializados",
+      src: "/lovable-uploads/galeria/videos/demolicao_.mp4"
+    },
+    {
+      title: "Perfuração de Estacas",
+      description: "Fundações sólidas com perfuração precisa de estacas",
+      src: "/lovable-uploads/galeria/videos/perfuracao_de_estacas.mp4"
+    },
+    {
+      title: "Remoção de Calçada",
+      description: "Remoção de calçada e descarte correto do entulho",
+      src: "/lovable-uploads/galeria/videos/remocao_de_calcada_e_descarte_correto_do_entulho.mp4"
+    },
+    {
+      title: "Nivelamento de Terreno",
+      description: "Remoção de terra para nivelamento preciso do terreno",
+      src: "/lovable-uploads/galeria/videos/remocao_de_terra_para_nivelar_terreno_.mp4"
+    },
+    {
+      title: "Terraplenagem de Barracão",
+      description: "Preparação de terreno para construção de barracões industriais",
+      src: "/lovable-uploads/galeria/videos/terraplenagem_de_barracao.mp4"
+    }
+  ];
+
   return (
     <section id="galeria" className="py-20 bg-gradient-to-br from-industrial-light to-white">
       <div className="container mx-auto px-4">
@@ -96,6 +135,24 @@ const Gallery = () => {
             Confira alguns dos nossos trabalhos realizados ao longo de mais de 20 anos 
             de experiência em terraplenagem, escavação e locação de caçambas.
           </p>
+        </div>
+
+        {/* Video Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              <Play className="h-4 w-4" />
+              Vídeos dos Trabalhos
+            </div>
+            <h3 className="text-3xl font-bold text-industrial-black mb-4">
+              Veja Nossos Equipamentos em Ação
+            </h3>
+            <p className="text-lg text-industrial-gray max-w-2xl mx-auto">
+              Acompanhe de perto como executamos nossos serviços com precisão e qualidade.
+            </p>
+          </div>
+          
+          <VideoCarousel slides={videoSlides} />
         </div>
 
         {/* Gallery Grid */}
