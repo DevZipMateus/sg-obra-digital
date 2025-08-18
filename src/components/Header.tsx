@@ -1,9 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,8 +52,19 @@ const Header = () => {
       }`}>
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-xl font-bold text-industrial-black">
-            <img src="/lovable-uploads/c6c9b14d-7949-479d-977b-9a9008a189b0.png" alt="SG Entulho e Terraplenagem" className="h-12" />
+          <a href="/" className="flex items-center">
+            {!logoError ? (
+              <img 
+                src="/lovable-uploads/744207c2-cc70-4e4e-9bc1-712ea32976e6.png" 
+                alt="SG Entulho e Terraplenagem" 
+                className="h-12 w-auto"
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <div className="text-xl font-bold text-industrial-black">
+                SG Entulho e Terraplenagem
+              </div>
+            )}
           </a>
 
           {/* Navigation */}
