@@ -3,7 +3,6 @@
 
 import React, { useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Play, Pause } from 'lucide-react';
 
 interface VideoSlide {
   title: string;
@@ -16,16 +15,6 @@ interface VideoCarouselProps {
 }
 
 export function VideoCarousel({ slides }: VideoCarouselProps) {
-  const [playingVideo, setPlayingVideo] = useState<number | null>(null);
-
-  const handleVideoPlay = (index: number) => {
-    setPlayingVideo(index);
-  };
-
-  const handleVideoPause = () => {
-    setPlayingVideo(null);
-  };
-
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
       <Carousel className="w-full max-w-5xl mx-auto">
@@ -36,11 +25,11 @@ export function VideoCarousel({ slides }: VideoCarouselProps) {
                 <video
                   className="w-full h-full object-cover"
                   src={slide.src}
-                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   preload="metadata"
-                  onPlay={() => handleVideoPlay(index)}
-                  onPause={handleVideoPause}
-                  onEnded={handleVideoPause}
                 >
                   Seu navegador não suporta o elemento de vídeo.
                 </video>
