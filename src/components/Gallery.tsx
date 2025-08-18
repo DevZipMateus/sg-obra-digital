@@ -1,13 +1,6 @@
 
 import React from 'react';
-import { Camera, ChevronLeft, ChevronRight } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Camera } from 'lucide-react';
 
 const Gallery = () => {
   const galleryImages = [
@@ -105,47 +98,32 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Gallery Carousel */}
-        <div className="relative">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {galleryImages.map((image, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="group relative overflow-hidden rounded-2xl bg-white shadow-industrial hover:shadow-equipment transition-all duration-500 hover:-translate-y-2">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        loading="lazy"
-                      />
-                      
-                      {/* Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-industrial-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                          <h3 className="text-lg font-bold mb-2">{image.title}</h3>
-                          <p className="text-sm opacity-90">{image.description}</p>
-                        </div>
-                      </div>
-                    </div>
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+          {galleryImages.map((image, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-2xl bg-white shadow-industrial hover:shadow-equipment transition-all duration-500 hover:-translate-y-2">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-industrial-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h3 className="text-lg font-bold mb-2">{image.title}</h3>
+                    <p className="text-sm opacity-90">{image.description}</p>
                   </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            
-            <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-0 shadow-lg" />
-            <CarouselNext className="right-4 bg-white/90 hover:bg-white border-0 shadow-lg" />
-          </Carousel>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-16 bg-gradient-to-r from-primary to-secondary rounded-2xl p-12 text-center text-white relative overflow-hidden">
+        <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-12 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-20" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
           }}></div>
