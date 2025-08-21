@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       {/* Top Info Bar */}
-      <div className="bg-industrial-black text-white py-2 text-sm">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-industrial-black text-white py-2 text-sm">
         <div className="container mx-auto flex items-center justify-between px-4">
           <div className="flex items-center gap-4">
             <a href="tel:+554299933287" className="hover:text-primary transition-colors flex items-center gap-1">
