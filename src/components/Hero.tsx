@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-primary/20 text-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 bg-primary/20 text-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm mt-16 sm:mt-20">
                 <Award className="h-4 w-4" />
                 Mais de 20 anos de experiência
               </div>
