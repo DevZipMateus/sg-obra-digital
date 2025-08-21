@@ -85,9 +85,9 @@ const Hero = () => {
               </Button>
               
               <Button 
-                variant="outline" 
+                variant="outline-dark" 
                 size="lg"
-                className="border-white/60 text-white hover:bg-white/10 hover:border-white text-lg px-8 py-4 h-auto backdrop-blur-sm"
+                className="text-lg px-8 py-4 h-auto"
                 onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Nossos Serviços

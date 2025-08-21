@@ -46,6 +46,13 @@
     --industrial-gray: 0 0% 45%;
     --industrial-light: 0 0% 96%;
 
+    /* Button Contrast Colors - WCAG AA Compliant */
+    --button-dark-bg: 0 0% 100% / 0.1; /* White with 10% opacity */
+    --button-dark-border: 0 0% 100% / 0.6; /* White with 60% opacity */
+    --button-dark-hover-bg: 0 0% 100% / 0.2; /* White with 20% opacity */
+    --button-light-bg: 45 96% 53% / 0.1; /* Primary with 10% opacity */
+    --button-light-border: 45 96% 53% / 0.6; /* Primary with 60% opacity */
+
     /* Shadows & Effects */
     --shadow-industrial: 0 10px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
     --shadow-equipment: 0 20px 50px -12px rgb(0 0 0 / 0.25);

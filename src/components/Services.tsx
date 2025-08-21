@@ -107,9 +107,9 @@ const Services = () => {
             </Button>
             
             <Button 
-              variant="outline"
+              variant="outline-light"
               size="lg"
-              className="border-primary/60 text-primary hover:bg-primary/10 hover:border-primary text-lg px-8 py-4 h-auto"
+              className="text-lg px-8 py-4 h-auto"
               onClick={() => document.querySelector('#contato')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Entrar em Contato
