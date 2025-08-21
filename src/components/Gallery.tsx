@@ -127,7 +127,7 @@ const Gallery = () => {
             Galeria de Trabalhos
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-industrial-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-black mb-6">
             Nossos Projetos em Ação
           </h2>
           
@@ -156,7 +156,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 mb-16">
           {galleryImages.map((image, index) => (
             <div key={index} className="group relative overflow-hidden rounded-2xl bg-white shadow-industrial hover:shadow-equipment transition-all duration-500 hover:-translate-y-2">
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -194,7 +194,7 @@ const Gallery = () => {
               garantindo a satisfação dos nossos clientes.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">500+</div>
                 <div className="text-sm opacity-80">Projetos Realizados</div>

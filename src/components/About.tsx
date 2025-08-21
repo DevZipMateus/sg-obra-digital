@@ -27,29 +27,29 @@ const About = () => {
             Sobre a SG Entulho
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-industrial-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-black mb-6">
             Pioneiros em Ubiratã-PR
           </h2>
           
-          <p className="text-xl text-industrial-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-industrial-gray max-w-3xl mx-auto leading-relaxed">
             A SG Entulho e Terraplenagem atua há mais de 2 décadas prestando serviços 
             de qualidade e com total excelência no setor de construção civil.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text gradient-industrial mb-2">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text gradient-industrial mb-2">
                 {stat.number}
               </div>
-              <p className="text-industrial-gray font-medium">{stat.label}</p>
+              <p className="text-sm sm:text-base text-industrial-gray font-medium">{stat.label}</p>
             </div>
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
@@ -71,8 +71,8 @@ const About = () => {
             </div>
 
             {/* Mission & Vision */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-industrial-light p-6 rounded-xl">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="bg-gradient-industrial-light p-4 sm:p-6 rounded-xl">
                 <Target className="h-8 w-8 text-primary mb-4" />
                 <h4 className="font-bold text-industrial-black mb-3">Missão</h4>
                 <p className="text-sm text-industrial-gray leading-relaxed">
@@ -81,7 +81,7 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="bg-gradient-industrial-light p-6 rounded-xl">
+              <div className="bg-gradient-industrial-light p-4 sm:p-6 rounded-xl">
                 <Eye className="h-8 w-8 text-secondary mb-4" />
                 <h4 className="font-bold text-industrial-black mb-3">Visão</h4>
                 <p className="text-sm text-industrial-gray leading-relaxed">

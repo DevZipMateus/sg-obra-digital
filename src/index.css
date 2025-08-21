@@ -75,6 +75,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden; /* Bloqueia rolagem horizontal */
   }
 
   /* Industrial Typography */
@@ -119,6 +120,24 @@
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Bloqueia rolagem horizontal */
+}
+
+/* Container responsivo adicional */
+.container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Garantir que elementos não extrapolem */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
 /* WhatsApp Button Pulse */

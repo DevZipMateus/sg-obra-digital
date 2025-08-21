@@ -45,7 +45,7 @@ const Services = () => {
             Nossos Serviços
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-industrial-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-black mb-6">
             Soluções Completas para sua Obra
           </h2>
           
@@ -56,11 +56,11 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-sm border border-border hover:shadow-industrial transition-all duration-300 hover:-translate-y-2"
+              className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-border hover:shadow-industrial transition-all duration-300 hover:-translate-y-2"
             >
               <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${service.gradient} p-4 mb-6 group-hover:scale-110 transition-transform`}>
                 <service.icon className="h-8 w-8 text-white" />
@@ -87,16 +87,16 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-gradient-to-r from-primary/10 via-white to-secondary/10 rounded-2xl p-12">
-          <h3 className="text-3xl font-bold text-industrial-black mb-4">
+        <div className="text-center bg-gradient-to-r from-primary/10 via-white to-secondary/10 rounded-2xl p-8 sm:p-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-industrial-black mb-4">
             Precisa de um Orçamento?
           </h3>
-          <p className="text-xl text-industrial-gray mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-industrial-gray mb-6 sm:mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e receba um orçamento personalizado para seu projeto. 
             Atendimento rápido e preços competitivos.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button 
               size="lg"
               className="gradient-industrial text-white hover:opacity-90 transition-opacity shadow-md group text-lg px-8 py-4 h-auto"

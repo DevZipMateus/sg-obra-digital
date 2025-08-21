@@ -40,7 +40,7 @@ const Equipment = () => {
             Nossos Equipamentos
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-industrial-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-black mb-6">
             Maquinário Moderno e Eficiente
           </h2>
           
@@ -51,11 +51,11 @@ const Equipment = () => {
         </div>
 
         {/* Equipment Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {equipment.map((item, index) => (
             <div 
               key={index}
-              className="group bg-gradient-industrial-light rounded-2xl p-8 border border-primary/20 hover:shadow-equipment transition-all duration-500 hover:-translate-y-3 overflow-hidden relative"
+              className="group bg-gradient-industrial-light rounded-2xl p-6 lg:p-8 border border-primary/20 hover:shadow-equipment transition-all duration-500 hover:-translate-y-3 overflow-hidden relative"
             >
               {/* Background Decoration */}
               <div className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700"></div>
@@ -101,7 +101,7 @@ const Equipment = () => {
               e seguem rigorosos padrões de segurança operacional.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm opacity-80">Manutenção em Dia</div>

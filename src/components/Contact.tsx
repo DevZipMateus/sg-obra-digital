@@ -14,7 +14,7 @@ const Contact = () => {
             Entre em Contato
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-industrial-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-black mb-6">
             Solicite seu Orçamento
           </h2>
           
@@ -24,7 +24,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
@@ -117,7 +117,8 @@ const Contact = () => {
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.123456789!2d-52.994232!3d-24.546371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDMyJzQ2LjkiUyA1MsKwNTknMzkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
                   width="100%"
-                  height="400"
+                  height="300"
+                  className="md:h-[400px]"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
@@ -135,7 +136,7 @@ const Contact = () => {
               <p className="text-industrial-gray mb-4">
                 Atendemos toda a região de Ubiratã-PR e municípios vizinhos:
               </p>
-              <div className="grid grid-cols-2 gap-2 text-sm text-industrial-gray">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-industrial-gray">
                 <div>• Ubiratã</div>
                 <div>• Campo Mourão</div>
                 <div>• Altamira do Paraná</div>
