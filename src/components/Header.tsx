@@ -50,7 +50,7 @@ const Header = () => {
       <header className={`fixed top-12 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/90'
       }`}>
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center">
             {!logoError ? (
