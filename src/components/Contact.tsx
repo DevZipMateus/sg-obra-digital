@@ -76,8 +76,7 @@ const Contact = () => {
                     <h4 className="font-semibold text-industrial-black mb-1">Horário</h4>
                     <p className="text-industrial-gray">
                       Segunda à Sexta: 7h às 18h<br />
-                      Sábado: 7h às 12h<br />
-                      <span className="text-primary font-medium">Atendimento de emergência 24h</span>
+                      Sábado: 7h às 12h
                     </p>
                   </div>
                 </div>
