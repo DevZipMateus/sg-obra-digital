@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Truck, Wrench, Cog, Shield } from 'lucide-react';
 
@@ -101,21 +100,17 @@ const Equipment = () => {
               e seguem rigorosos padrões de segurança operacional.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm opacity-80">Manutenção em Dia</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-secondary mb-2">24h</div>
-                <div className="text-sm opacity-80">Suporte Técnico</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">ISO</div>
+                <div className="text-3xl font-bold text-secondary mb-2">ISO</div>
                 <div className="text-sm opacity-80">Padrões de Qualidade</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-secondary mb-2">0</div>
+                <div className="text-3xl font-bold text-primary mb-2">0</div>
                 <div className="text-sm opacity-80">Acidentes</div>
               </div>
             </div>

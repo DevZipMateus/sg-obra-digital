@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Camera, Play } from 'lucide-react';
 import { VideoCarousel } from './VideoCarousel';
@@ -194,7 +193,7 @@ const Gallery = () => {
               garantindo a satisfação dos nossos clientes.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">500+</div>
                 <div className="text-sm opacity-80">Projetos Realizados</div>
@@ -206,10 +205,6 @@ const Gallery = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">100%</div>
                 <div className="text-sm opacity-80">Clientes Satisfeitos</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2">24h</div>
-                <div className="text-sm opacity-80">Suporte Disponível</div>
               </div>
             </div>
           </div>
