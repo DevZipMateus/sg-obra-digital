@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Target, Eye, CheckCircle, Truck, Award, Shield } from 'lucide-react';
 
@@ -14,7 +13,6 @@ const About = () => {
     { number: '20+', label: 'Anos de Experiência' },
     { number: '1000+', label: 'Projetos Realizados' },
     { number: '100%', label: 'Licenciado' },
-    { number: '24h', label: 'Disponibilidade' },
   ];
 
   return (
@@ -38,7 +36,7 @@ const About = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text gradient-industrial mb-2">
