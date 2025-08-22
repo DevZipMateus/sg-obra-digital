@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -128,6 +127,13 @@ const Contact = () => {
                 <div>• Altamira do Paraná</div>
                 <div>• Roncador</div>
                 <div>• Juranda</div>
+                <div>• Goioerê</div>
+                <div>• Campina da Lagoa</div>
+                <div>• Nova Cantu</div>
+                <div>• Nova Aurora</div>
+                <div>• Cafelândia</div>
+                <div>• Corbélia</div>
+                <div>• Quarto Centenário</div>
                 <div>• Região Central</div>
               </div>
             </div>
