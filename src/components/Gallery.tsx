@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Camera, Play } from 'lucide-react';
 import { VideoCarousel } from './VideoCarousel';
@@ -31,7 +32,7 @@ const Gallery = () => {
     src: '/lovable-uploads/galeria/caminhao_cacamba_truck.jpg',
     alt: 'Caminhão caçamba',
     title: 'Caminhão Caçamba',
-    description: 'Transport eficiente de materiais e entulho'
+    description: 'Transporte eficiente de materiais e entulho'
   }, {
     src: '/lovable-uploads/galeria/correcao_de_estrada_rural_.jpg',
     alt: 'Correção de estrada rural',
