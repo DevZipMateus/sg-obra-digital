@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Contact = () => {
-  return (
-    <section id="contato" className="py-20 bg-gradient-to-b from-white to-industrial-light">
+  return <section id="contato" className="py-20 bg-gradient-to-b from-white to-industrial-light">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -84,21 +81,18 @@ const Contact = () => {
             </div>
 
             {/* WhatsApp CTA */}
-            <div className="bg-gradient-industrial rounded-2xl p-8 text-white">
+            <div className="bg-gradient-industrial rounded-2xl p-8 text-white bg-zinc-400">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                  <MessageCircle className="h-8 w-8" />
+                  <MessageCircle className="h-8 w-8 bg-transparent" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold">Atendimento via WhatsApp</h4>
+                  <h4 className="text-xl font-bold text-zinc-950">Atendimento via WhatsApp</h4>
                   <p className="opacity-90">Resposta rápida e personalizada</p>
                 </div>
               </div>
               
-              <Button 
-                className="w-full bg-white/20 hover:bg-white/30 text-white border-white/30 text-lg py-4 h-auto"
-                onClick={() => window.open('https://wa.me/5544999900681?text=Olá! Gostaria de solicitar um orçamento para meu projeto.', '_blank')}
-              >
+              <Button className="w-full bg-white/20 hover:bg-white/30 text-white border-white/30 text-lg py-4 h-auto" onClick={() => window.open('https://wa.me/5544999900681?text=Olá! Gostaria de solicitar um orçamento para meu projeto.', '_blank')}>
                 <Send className="mr-2 h-5 w-5" />
                 Enviar Mensagem WhatsApp
               </Button>
@@ -113,17 +107,9 @@ const Contact = () => {
               </h3>
               
               <div className="bg-white rounded-2xl shadow-industrial overflow-hidden border border-border">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.123456789!2d-52.994232!3d-24.546371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDMyJzQ2LjkiUyA1MsKwNTknMzkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-                  width="100%"
-                  height="300"
-                  className="md:h-[400px]"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização SG Entulho e Terraplenagem"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.123456789!2d-52.994232!3d-24.546371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDMyJzQ2LjkiUyA1MsKwNTknMzkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="300" className="md:h-[400px]" style={{
+                border: 0
+              }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização SG Entulho e Terraplenagem"></iframe>
               </div>
             </div>
 
@@ -147,8 +133,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
